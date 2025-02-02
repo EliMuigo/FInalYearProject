@@ -1,15 +1,20 @@
-import React from 'react'
-import BaseHeader from '../partials/BaseHeader'
-import BaseFooter from '../partials/BaseFooter'
-import { Link } from 'react-router-dom'
+import React from "react";
+// import BaseHeader from '../partials/BaseHeader'
+// import BaseFooter from '../partials/BaseFooter'
 
+import BaseHeader from "../../views/partials/BaseHeader";
+import BaseFooter from "../../views/partials/BaseFooter";
+import { Link } from "react-router-dom";
 
 function Register() {
   return (
     <>
       <BaseHeader />
 
-      <section className="container d-flex flex-column vh-100" style={{ marginTop: "150px" }}>
+      <section
+        className="container d-flex flex-column vh-100"
+        style={{ marginTop: "150px" }}
+      >
         <div className="row align-items-center justify-content-center g-0 h-lg-100 py-8">
           <div className="col-lg-5 col-md-8 py-8 py-xl-0">
             <div className="card shadow">
@@ -27,7 +32,9 @@ function Register() {
                 <form className="needs-validation" noValidate="">
                   {/* Username */}
                   <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Full Name</label>
+                    <label htmlFor="email" className="form-label">
+                      Full Name
+                    </label>
                     <input
                       type="text"
                       id="full_name"
@@ -38,7 +45,9 @@ function Register() {
                     />
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email Address</label>
+                    <label htmlFor="email" className="form-label">
+                      Email Address
+                    </label>
                     <input
                       type="email"
                       id="email"
@@ -48,10 +57,12 @@ function Register() {
                       required=""
                     />
                   </div>
-                  
+
                   {/* Password */}
                   <div className="mb-3">
-                    <label htmlFor="password" className="form-label">Password</label>
+                    <label htmlFor="password" className="form-label">
+                      Password
+                    </label>
                     <input
                       type="password"
                       id="password"
@@ -62,7 +73,9 @@ function Register() {
                     />
                   </div>
                   <div className="mb-3">
-                    <label htmlFor="password" className="form-label">Confirm Password</label>
+                    <label htmlFor="password" className="form-label">
+                      Confirm Password
+                    </label>
                     <input
                       type="password"
                       id="password"
@@ -75,7 +88,7 @@ function Register() {
                   <div>
                     <div className="d-grid">
                       <button type="submit" className="btn btn-primary">
-                        Sign Up <i className='fas fa-user-plus'></i>
+                        Sign Up <i className="fas fa-user-plus"></i>
                       </button>
                     </div>
                   </div>
@@ -88,7 +101,7 @@ function Register() {
 
       <BaseFooter />
     </>
-  )
+  );
 }
 
-export default Register
+export default Register;

@@ -1,14 +1,19 @@
-import React from 'react'
-import BaseHeader from '../partials/BaseHeader'
-import BaseFooter from '../partials/BaseFooter'
+import React from "react";
+// import BaseHeader from '../partials/BaseHeader'
+// import BaseFooter from '../partials/BaseFooter'
 
+import BaseHeader from "../../views/partials/BaseHeader";
+import BaseFooter from "../../views/partials/BaseFooter";
 
 function Logout() {
   return (
     <>
       <BaseHeader />
 
-      <section className="container d-flex flex-column vh-100" style={{ marginTop: "150px" }}>
+      <section
+        className="container d-flex flex-column vh-100"
+        style={{ marginTop: "150px" }}
+      >
         <div className="row align-items-center justify-content-center g-0 h-lg-100 py-8">
           <div className="col-lg-5 col-md-8 py-8 py-xl-0">
             <div className="card shadow">
@@ -21,11 +26,14 @@ function Logout() {
                 </div>
                 <form className="needs-validation mt-5" noValidate="">
                   <div className="d-grid d-flex">
-                    <button type="submit" className="btn btn-primary me-2 w-100">
-                      Login <i className='fas fa-sign-in-alt'></i>
+                    <button
+                      type="submit"
+                      className="btn btn-primary me-2 w-100"
+                    >
+                      Login <i className="fas fa-sign-in-alt"></i>
                     </button>
                     <button type="submit" className="btn btn-primary w-100">
-                      Register <i className='fas fa-user-plus'></i>
+                      Register <i className="fas fa-user-plus"></i>
                     </button>
                   </div>
                 </form>
@@ -37,7 +45,7 @@ function Logout() {
 
       <BaseFooter />
     </>
-  )
+  );
 }
 
-export default Logout
+export default Logout;
